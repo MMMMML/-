@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/attestation.css">
+    <link rel="stylesheet" href="js/mobileSelect/css/mobileSelect.css">
+    <title>紧急联系人</title>
+    <style>
+        body {
+            background: rgb(240, 240, 240)
+        }
+        
+        .emergency {
+            margin: 10px 0;
+            font-size: 14px;
+            padding: 2px 10px;
+        }
+
+        .emergency .human {
+            display: inline-block;
+            width: 28%;
+        }
+
+        .emergency .messages {
+            width: 70%;
+            display: inline-block;
+        }
+        .next1{
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 2rem 0; 
+        }
+        /* .rightarr{
+            padding-left: 10rem !important;
+        } */
+        .writes{
+            display: inline-block;
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info" style="padding: 2px 10px;">
+        
+    </div>
+    <div class="emergency">
+        <span class="human">紧急联系人</span>
+        <span class="messages">若不填写，将无法享有紧急联络家属服务</span>
+    </div>
+    <div class="input">
+        <div class="input-name">
+            <span class="name-word">姓名</span>
+            <input type="text" class="inputs-name name" placeholder="请输入姓名">
+            <img class="present" src="img/btn.png" alt="">
+        </div>
+        <div class="input-name" style="margin-top:1px">
+            <span class="name-word">手机号码</span>
+            <input type="text" class="inputs-name phone" placeholder="请输入手机号码">
+            <!-- <img class="present" src="img/btn.png" alt=""> -->
+        </div>
+    </div>
+    <div class="emergency">
+        <span class="human">医疗急救信息</span>
+        <span class="messages">选填</span>
+    </div>
+    <div class="input">
+        <div class="input-name mar5">
+            <span class="name-word">性别</span>
+            <!-- <input type="text" placeholder="请输入证件类型"> -->
+            <div class="arrows">
+                <div id="trigger1">请选择您的性别</div>
+                <img src="img/choice@3x.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="input" style="margin-top:1px">
+        <div class="input-name mar5">
+            <span class="name-word">血型</span>
+            <!-- <input type="text" placeholder="请输入证件类型"> -->
+            <div class="arrows">
+                <div class="trigger" id="trigger2">请选择您的血型</div>
+                <img src="img/choice@3x.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="input" style="margin-top:1px">
+        <div class="input-name">
+            <span class="name-word" style="width:21%">身高(cm)</span>
+            <input type="text" class="inputs-name height" placeholder="请输入身高">
+        </div>
+        <div class="input-name" style="margin-top:1px">
+            <span class="name-word" style="width:21%">体重(kg)</span>
+            <input type="text" class="inputs-name weight" placeholder="请输入体重">
+        </div>
+    </div>
+    <div class="input" style="margin-top:1px">
+        <div class="input-name mar5 anaphylaxis">
+            <span class="name-word">过敏反应</span>
+            <span class="write0 writes"></span>
+            <img  src="img/Chevron@3x.png" alt="">
+        </div>
+    </div>
+    <div class="input" style="margin-top:1px">
+        <div class="input-name mar5 familyhistory">
+            <span class="name-word">家族病史</span>
+            <span class="writes write1"></span>
+            <img  src="img/Chevron@3x.png" alt="">
+        </div>
+    </div>
+    <div class="input" style="margin-top:1px">
+        <div class="input-name mar5 druguse">
+            <span class="name-word">药物使用</span>
+            <span class="writes write2"></span>
+            <img  src="img/Chevron@3x.png" alt="">
+        </div>
+    </div>
+    <div class="next1">
+        <button class="next-btn">完成并保存</button>
+    </div>
+</body>
+<script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/mobileSelect/js/mobileSelect.min.js"></script>
+<script src="js/emergency.js"></script>
+</html>

@@ -1,0 +1,64 @@
+.error-mess{
+    margin-top: 10px;
+    font-size: 12px;
+    display: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.waiting-nv{
+    width: 100%;
+    height: 100%;
+    z-index: 33;
+    background: rgba(0, 0, 0, .5); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.waiting{
+    width: 70%;
+    height: 15%;
+    margin: 50% auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 2px 12px #ccc;
+}
+.waiting p{
+    text-align: center;
+    /* color: white; */
+    font-size: 20px;
+    line-height:5.5rem;
+
+}
+.warp{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.warp .warp-nav{
+    width: 90%;
+    height: 80%;
+    background: white;
+    overflow-y: auto;
+    margin: 15% auto;
+    
+}
+.h1{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.nav-word{
+    padding: 10px 20px;
+}
+.close{
+    width:30px;
+    position:absolute;
+    bottom:0.5rem;
+    left:50%;
+    transform: translateY(-50%)
+}

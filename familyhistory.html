@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <title>家族病史</title>
+    <style>
+        body {
+            background: #F0F0F0;
+            padding: 20px;
+        }
+
+        .nextbtn {
+            margin-top: 90%;
+            width: 100%;
+            background: #1AAD19;
+            border: none;
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding-bottom: 17px;">
+        <p>请尽可能详细地描述家族病史等信息</p>
+    </div>
+
+    <div>
+        <textarea style="border: none;border-radius: 5px;resize: none;width: 100%;
+        height: 200px;" name="" id=""></textarea>
+    </div>
+
+    <div class="next">
+        <button class="nextbtn">保存</button>
+    </div>
+</body>
+<script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    var ids = window.sessionStorage.getItem('userid')
+    var nav = $('textarea').val()
+    var mess = ''
+    if (window.sessionStorage.getItem('data')) {
+        mess = JSON.parse(window.sessionStorage.getItem('data'))
+    }
+    if (mess) {
+        var message = mess.familyHistory
+        $('textarea').val(message)
+    } else {
+        $('textarea').val('')
+    }
+    $('.nextbtn').click(function () {
+        var family = {
+            nav: $('textarea').val(),
+            id: window.sessionStorage.getItem('userid')
+        }
+        window.sessionStorage.setItem('family', JSON.stringify(family))
+        window.location.href = 'https://wechat.jinhui120.com/demo/emergency.html'
+    })
+</script>
+
+</html>

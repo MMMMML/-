@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/attestation.css">
+    <link rel="stylesheet" href="js/iosselect/src/iosSelect.css">
+    <link rel="stylesheet" href="js/mobileSelect/css/mobileSelect.css">
+    <title>实名认证</title>
+</head>
+
+<body>
+    <div class="img">
+        <img src="img/banner1.jpg" alt="">
+    </div>
+    <div class="word">
+        <p>您需要进行实名认证，信息只能提交一次，不可修改，请慎重填写。</p>
+    </div>
+    <div class="input">
+        <div class="input-name">
+            <span class="name-word">姓名</span>
+            <input type="text" class="input1" placeholder="请输入姓名">
+            <div class="show">
+                    <img class="warning" src="img/小图标_警示_小号@3x.png" alt="">
+                    <p class="error">姓名格式错误，请重新填写</p>
+            </div>
+        </div>
+        <div class="input-name mar5">
+            <span class="name-word">证件类型</span>
+            <!-- <input type="text" placeholder="请输入证件类型"> -->
+            <div class="arrows">
+                    <div id="trigger1">请输入证件类型</div>
+                    <img src="img/choice@3x.png" alt="">
+                </div>
+           
+        </div>
+
+        <div class="input-name mar5">
+            <span class="name-word">证件号码</span>
+            <input type="text" class="input2" placeholder="请输入证件号码">
+            <div class="show1">
+                    <img class="warning" src="img/小图标_警示_小号@3x.png" alt="">
+                    <p class="error">证件号码格式错误，请重新填写</p>
+            </div>
+        </div>
+
+        <div class="input-name mar5">
+            <span class="name-word">手机号码</span>
+            <input type="text" class="input3" placeholder="请输入手机号码">
+            <div class="show2">
+                    <img class="warning" src="img/小图标_警示_小号@3x.png" alt="">
+                    <p class="error">手机号码格式错误，请重新填写</p>
+            </div>
+        </div>
+
+        <div class="input-name mar5">
+            <span class="name-word">验证码</span>
+            <input type="text" class="input4" placeholder="请输入验证码">
+            <button class="btn">验证码</button>
+            <div class="show3">
+                    <img class="warning" src="img/小图标_警示_小号@3x.png" alt="">
+                    <p class="error">验证码错误，请重新填写</p>
+            </div>
+        </div>
+    </div>
+    <div class="attestation">
+        <button class="attestation-btn">实名认证</button>
+    </div>
+    
+</body>
+<script src="js/iosselect/demo/datepicker/zepto.js"></script>
+<script src="js/iosselect/src/iosSelect.js"></script>
+<script src="js/node_modules/jquery/dist/jquery.js"></script>
+<script src="js/mobileSelect/js/mobileSelect.min.js"></script>
+<script src="js/attestation.js"></script>
+
+</html>

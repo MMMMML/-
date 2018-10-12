@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/attestation.css">
+    <style>
+        body {
+            background: rgb(240, 240, 240)
+        }
+
+        .nav {
+            width: 100%;
+            height: 100%;
+            background: white;
+            margin-top: 10px;
+        }
+
+        .single {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .people {
+            width: 20%;
+            display: inline-block;
+            text-align: left;
+            padding-left: 1.6rem;
+            color: rgb(155, 155, 155);
+            font-size: 14px;
+        }
+
+        .human {
+            display: inline-block;
+            width: 70%;
+            font-size: 16px;
+            color: rgb(155, 155, 155);
+
+
+        }
+
+        .black {
+            color: black;
+        }
+
+        .line {
+            width: 87%;
+            margin: 0 auto;
+            height: 1px;
+            background: rgb(196, 196, 196)
+        }
+
+        .mess {
+            height: 42px;
+            line-height: 40px;
+        }
+
+        .next2 {
+            width: 90%;
+            text-align: center;
+           margin: 10px auto;
+        }
+        .next1 {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+        .next-btn1 {
+            background: white !important;
+            color: black !important;
+            border: 1px solid #ccc !important;
+        }
+        .next-btn {
+            width: 95%;
+            height: 40px;
+            background: rgb(26, 173, 25);
+            color: white;
+            border: 1px solid rgb(26, 173, 25);
+            border-radius: 4px;
+            font-size: 18px;
+        }
+        .waiting-nv {
+            width: 100%;
+            height: 100%;
+            z-index: 33;
+            background: rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .waiting {
+            width: 70%;
+            height: 15%;
+            margin: 50% auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 3px 2px 12px #ccc;
+        }
+
+        .waiting p {
+            text-align: center;
+            /* color: white; */
+            font-size: 20px;
+            line-height: 5.5rem;
+
+        }
+    </style>
+    <title>会员激活</title>
+</head>
+
+<body>
+        <div class="waiting-nv">
+                <div class="waiting">
+                    <p>正在处理中，请稍后...</p>
+                </div>
+            </div>
+    <div>
+        <img style="width:100%" src="img/header_various.png" alt="">
+    </div>
+    <div class="box">
+       
+    </div>
+
+    
+    <div class="box2">
+        
+    </div>
+    
+
+    <div class="next2">
+        <button class="next-btn">提交</button>
+    </div>
+
+    <div class="next1">
+            <button class="next-btn next-btn1">返回</button>
+        </div>
+</body>
+<script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/confirmmultiplayer.js"></script>
+</html>
